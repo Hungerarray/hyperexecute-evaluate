@@ -16,11 +16,11 @@ def test_case_3():
     assert True
 
 def test_case_4():
-    time.sleep(2)
+    time.sleep(5)
     assert True
 
 def test_case_5():
-    time.sleep(5)
+    time.sleep(2)
     assert True
 
 def test_case_6():
