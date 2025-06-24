@@ -8,6 +8,10 @@ pre:
   - env
   - pip install -r requirements.txt
 
+runtime:
+  language: python
+  version: 3
+
 testDiscovery:
   type: raw
   mode: dynamic
