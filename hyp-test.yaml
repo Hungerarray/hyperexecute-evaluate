@@ -2,6 +2,8 @@ version: 0.1
 autosplit: true
 concurrency: 2
 
+runson: linux
+
 pre:
   - env
   - uv sync
