@@ -6,11 +6,11 @@ runson: linux
 
 pre:
   - env
-  - uv sync
+  - pip install -r requirements.txt
 
 testDiscovery:
   type: raw
   mode: dynamic
-  command: uv run pytest --collect-only -q test_main.py 2> /dev/null | grep '::'
-testRunnerCommand: echo $test; uv run pytest $test
+  command: pytest --collect-only -q test_main.py 2> /dev/null | grep '::'
+testRunnerCommand: echo $test; pytest $test
 
