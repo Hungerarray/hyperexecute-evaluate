@@ -9,7 +9,6 @@ pre:
   - python --version
   - pip --version
   - dotnet --version
-  - java --version
   - go version
   - pip install -r requirements.txt
 
