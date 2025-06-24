@@ -1,0 +1,14 @@
+version: 0.1
+autosplit: true
+concurrency: 2
+
+pre:
+  - env
+  - uv sync
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: uv run pytest --collect-only -q test_main.py 2> /dev/null | grep '::'
+testRunnerCommand: echo $test; uv run pytest $test
+
